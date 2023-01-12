@@ -1,0 +1,12 @@
+form
+{
+    margin-left: 2%;
+}
+.billing-cycle-form-div
+{
+    margin-bottom: 5px;
+}
+.billing-cycle-form-div > label
+{
+    width: 10%;
+}

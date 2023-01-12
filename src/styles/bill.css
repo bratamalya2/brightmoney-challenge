@@ -1,0 +1,10 @@
+.card
+{
+    margin: 5px;
+}
+
+.bill-card-edit-button-container
+{
+    display: flex;
+    justify-content: space-between;
+}
