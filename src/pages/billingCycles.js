@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { Line } from 'react-chartjs-2';
 import {
@@ -56,6 +56,16 @@ function BillingCycles() {
             }
         }
     };
+
+    useEffect(() => {
+        const currMonthBills = bills.filter(bill => {
+                        const month = parseInt(bill.date.split('-')[1]);
+                        const year = parseInt(bill.date.split('-')[2]);
+                        return month === currentMonth && year === currentYear;
+                    });
+                    setDates(currMonthBills.map(bill => bill.date));
+                    setAmounts(currMonthBills.map(bill => bill.amount));
+    }, [currentMonth, currentYear, bills]);
 
     return (
         <div>

@@ -1,0 +1,10 @@
+.current-bill-page-container > p
+{
+    text-align: center;
+}
+
+.highlighted-bill-cards
+{
+    display: flex;
+    flex-wrap: wrap;
+} 
