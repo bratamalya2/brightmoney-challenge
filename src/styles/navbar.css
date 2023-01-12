@@ -1,0 +1,22 @@
+.navbar
+{
+    background-color: rgb(190, 190, 190);
+    height: 50px;
+    margin-bottom: 50px;
+}
+
+.navbar > ul
+{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar > ul a
+{
+    text-decoration: none;
+    color: whitesmoke;
+}
